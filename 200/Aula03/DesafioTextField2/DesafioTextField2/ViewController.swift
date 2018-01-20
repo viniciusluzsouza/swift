@@ -60,33 +60,27 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let char = string.cString(using: String.Encoding.utf8)!
         let isBackSpace = strcmp(char, "\\b")
         
-        var last = false
         var retorno = false
         
         if (isBackSpace == -92) {
-            if (self.chars == 129) {
-                last = true
-                retorno = self.textFieldShouldBeginEditing(myTextField)
-            }
+            retorno = self.textFieldShouldBeginEditing(myTextField)
             self.chars -= 1
         } else {
             self.chars += 1
+            retorno = self.textFieldShouldBeginEditing(myTextField)
         }
         
         var restante = 0
-        if (self.chars <= 128) {
-            restante = 128 - self.chars
+        if (self.chars <= 10) {
+            restante = 10 - self.chars
         } else {
             restante = 0
         }
         self.lbCaracteres.text = "\(restante) caracteres restantes."
         
-        if last {
-            return retorno
-        }
     
         if self.limitar {
-            return self.textFieldShouldBeginEditing(myTextField)
+            return retorno
         } else {
             return true
         }
@@ -95,7 +89,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        if (self.chars > 128) {
+        if (self.chars > 10) {
             return false
         }
         return true
