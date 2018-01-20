@@ -19,6 +19,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Propriedades
     var limitar : Bool = false
     var chars : Int = 0
+    var charsPassados : Int = 0
     
     
     // MARK: - View Life Cycle
@@ -63,11 +64,24 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var retorno = false
         
         if (isBackSpace == -92) {
-            retorno = self.textFieldShouldBeginEditing(myTextField)
-            self.chars -= 1
-        } else {
+            if (charsPassados > 0) {
+                retorno = true
+                charsPassados -= 1
+            } else {
+                if (self.chars > 10) {
+                    retorno = true
+                } else {
+                    retorno = self.textFieldShouldBeginEditing(myTextField)
+                }
+                self.chars -= 1
+            }
+        } else if (self.chars < 10){
             self.chars += 1
             retorno = self.textFieldShouldBeginEditing(myTextField)
+        } else {
+            if !(self.limitar){
+                charsPassados += 1
+            }
         }
         
         var restante = 0
