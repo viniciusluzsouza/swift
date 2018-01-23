@@ -68,14 +68,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 retorno = true
                 charsPassados -= 1
             } else {
-                if (self.chars > 10) {
+                if (self.chars > 128) {
                     retorno = true
                 } else {
                     retorno = self.textFieldShouldBeginEditing(myTextField)
                 }
                 self.chars -= 1
             }
-        } else if (self.chars < 10){
+        } else if (self.chars < 128){
             self.chars += 1
             retorno = self.textFieldShouldBeginEditing(myTextField)
         } else {
@@ -85,8 +85,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         
         var restante = 0
-        if (self.chars <= 10) {
-            restante = 10 - self.chars
+        if (self.chars <= 128) {
+            restante = 128 - self.chars
         } else {
             restante = 0
         }
@@ -103,7 +103,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        if (self.chars > 10) {
+        if (self.chars > 128) {
             return false
         }
         return true
