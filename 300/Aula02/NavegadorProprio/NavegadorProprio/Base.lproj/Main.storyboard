@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NavegadorProprio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="HUl-1J-mQZ">
+                                <rect key="frame" x="16" y="45" width="248" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fGJ-l1-Omr"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" returnKeyType="go" textContentType="url"/>
+                            </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUt-36-u5S">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="FTy-rB-xf8"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="asF-hz-0Cv">
+                                        <connections>
+                                            <action selector="voltar:" destination="BYZ-38-t0r" id="HnF-GX-L41"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="wn3-fV-joq"/>
+                                    <barButtonItem systemItem="fastForward" id="aAo-dY-Y1M">
+                                        <connections>
+                                            <action selector="avancar:" destination="BYZ-38-t0r" id="FDv-VY-YU5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Vvr-cx-3iC"/>
+                                    <barButtonItem title="Home" id="53l-bM-Oys">
+                                        <connections>
+                                            <action selector="irHome:" destination="BYZ-38-t0r" id="b9K-hC-jZa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                            <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5aV-MT-QJb">
+                                <rect key="frame" x="0.0" y="100" width="320" height="424"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MR-jS-JPI">
+                                <rect key="frame" x="274" y="45" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="5GQ-6Y-djC"/>
+                                    <constraint firstAttribute="height" constant="30" id="dCj-uF-8vg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Ir">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="irParaEndereco:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yyA-sZ-GTD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5aV-MT-QJb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3u6-Nv-R4b"/>
+                            <constraint firstItem="bUt-36-u5S" firstAttribute="top" secondItem="5aV-MT-QJb" secondAttribute="bottom" id="EEw-31-iA6"/>
+                            <constraint firstItem="5aV-MT-QJb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FYe-K6-tCi"/>
+                            <constraint firstItem="2MR-jS-JPI" firstAttribute="leading" secondItem="HUl-1J-mQZ" secondAttribute="trailing" constant="10" id="GV4-Hd-3Yu"/>
+                            <constraint firstItem="2MR-jS-JPI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="JCd-8t-onv"/>
+                            <constraint firstItem="bUt-36-u5S" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Pm8-OR-vjV"/>
+                            <constraint firstItem="HUl-1J-mQZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Vh1-vR-E3c"/>
+                            <constraint firstItem="5aV-MT-QJb" firstAttribute="top" secondItem="HUl-1J-mQZ" secondAttribute="bottom" constant="25" id="YBn-cU-SFg"/>
+                            <constraint firstItem="bUt-36-u5S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fAy-8q-9sH"/>
+                            <constraint firstItem="HUl-1J-mQZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="g1R-gK-fah"/>
+                            <constraint firstItem="bUt-36-u5S" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="q8P-z8-Lau"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2MR-jS-JPI" secondAttribute="trailing" constant="16" id="vp2-qc-jrl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnAvancar" destination="aAo-dY-Y1M" id="s6l-An-a61"/>
+                        <outlet property="btnVoltar" destination="asF-hz-0Cv" id="JT8-Ar-Nb9"/>
+                        <outlet property="textFieldEndereco" destination="HUl-1J-mQZ" id="yv2-sa-EEN"/>
+                        <outlet property="webViewExibicao" destination="5aV-MT-QJb" id="O1h-kJ-ShN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.375" y="117.25352112676056"/>
+        </scene>
+    </scenes>
+</document>

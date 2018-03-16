@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+ 
+    Linha de cometários
+ 
+    - O principal conceito da estrutura de linguagem de marcação XML, são as tags. Toda e qualquer informação deve estar envolvida por tags de abertura e fechamento;
+ 
+    - Tag de abertura: <>
+    - Tag de fechamento: </>
+ 
+    - Apenas a tag de abertura do arquivo <?xml?> não necessita da tag de fechamento.
+ 
+ -->
+<lista>
+    <aluno>
+        <nome>Maria</nome>
+        <idade>20</idade>
+    </aluno>
+    <aluno>
+        <nome>Joaquim</nome>
+        <idade>25</idade>
+    </aluno>
+    <aluno>
+        <nome>Anibal</nome>
+        <idade>22</idade>
+    </aluno>
+    <aluno>
+        <nome>Francisca</nome>
+        <idade>28</idade>
+    </aluno>
+</lista>
+

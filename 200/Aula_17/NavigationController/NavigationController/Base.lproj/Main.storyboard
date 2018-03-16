@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IVe-cJ-yCX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Amarela-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AmarelaViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHv-G3-UZy">
+                                <rect key="frame" x="135" y="318" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ir pra tela cinza"/>
+                                <connections>
+                                    <segue destination="Lup-pb-tBD" kind="show" id="edp-lH-bgg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.98659028250000003" blue="0.035247800320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Amarela" id="52u-MW-u2X"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264.80000000000001" y="131.78410794602701"/>
+        </scene>
+        <!--Cinza-->
+        <scene sceneID="gJx-hs-ZdS">
+            <objects>
+                <viewController id="Lup-pb-tBD" customClass="CinzaViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4z8-5Q-u0o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jf6-j7-mqn">
+                                <rect key="frame" x="141" y="233" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ir para a azulzona"/>
+                                <connections>
+                                    <segue destination="IZn-VV-SQf" kind="show" id="YVy-7G-UKG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEb-ln-x3E">
+                                <rect key="frame" x="124" y="378" width="154" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ir para a azul mortinho"/>
+                                <connections>
+                                    <segue destination="qwV-Bu-ojl" kind="show" id="3s0-DR-fvi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="n7T-8H-Ku3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cinza" id="eNb-Rq-mmU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qG9-In-1Yi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="124.58770614692655"/>
+        </scene>
+        <!--Azul Mortinho-->
+        <scene sceneID="8nz-Nu-ncm">
+            <objects>
+                <viewController id="qwV-Bu-ojl" customClass="AzulMortinhoViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fft-Mf-U9a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zug-x8-jLa">
+                                <rect key="frame" x="114" y="257" width="156" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ir para o azul clarinho"/>
+                                <connections>
+                                    <segue destination="y0l-Qh-nwM" kind="show" id="aRl-c3-huN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81763631110000001" green="0.88197523359999996" blue="0.91962039470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Af3-NN-Vev"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Azul Mortinho" id="X3Z-nM-el5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w3N-L1-PDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2044" y="669.71514242878561"/>
+        </scene>
+        <!--Azulona-->
+        <scene sceneID="66c-u5-fTl">
+            <objects>
+                <viewController id="IZn-VV-SQf" customClass="AzulonaViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zbn-z1-A0Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrS-vI-mgt">
+                                <rect key="frame" x="124" y="372" width="144" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ir para o azul claro">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4Oq-VM-ljA" kind="show" id="5mB-hI-85x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2058545947" green="0.41287249329999998" blue="0.57088536020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="2yJ-9B-OWx"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Azulona" id="6s1-Xe-eCA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgU-lu-IUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724" y="-539.28035982008998"/>
+        </scene>
+        <!--Azul Claro-->
+        <scene sceneID="Ml2-3r-7r0">
+            <objects>
+                <viewController id="4Oq-VM-ljA" customClass="AzulClaroViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N3U-VH-LM5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJE-U8-58L">
+                                <rect key="frame" x="143" y="396" width="144" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ir para o Laranja">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iTO-ZM-1Lc" kind="show" id="N2A-Ru-aug"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="maw-kW-7iT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Azul Claro" id="eH7-iu-0Rc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h21-eG-X5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2575" y="-554"/>
+        </scene>
+        <!--Azul Clarinho-->
+        <scene sceneID="uyH-t4-YNL">
+            <objects>
+                <viewController id="y0l-Qh-nwM" customClass="AzulClarinhoViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eHb-Lk-63K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tO7-uE-Rb6">
+                                <rect key="frame" x="124" y="210" width="106" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ir para o roxo"/>
+                                <connections>
+                                    <segue destination="QlU-7S-Cxe" kind="show" id="wO1-Z6-pXs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPY-al-ORD">
+                                <rect key="frame" x="115" y="353" width="124" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ir para o vermelho"/>
+                                <connections>
+                                    <segue destination="5XP-yE-OTC" kind="show" id="C3S-L4-xZW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="UBG-P1-eip"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Azul Clarinho" id="qqW-up-B5i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hcl-Go-Nfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2912.8000000000002" y="669.71514242878561"/>
+        </scene>
+        <!--Laranja-->
+        <scene sceneID="qna-b2-WXG">
+            <objects>
+                <viewController id="iTO-ZM-1Lc" customClass="LaranjaViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HOu-jP-SVu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="BEb-46-VBc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Laranja" id="Cjy-pP-T6J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tQb-dh-s5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3478" y="-536"/>
+        </scene>
+        <!--Roxa-->
+        <scene sceneID="W2X-AL-irK">
+            <objects>
+                <viewController id="QlU-7S-Cxe" customClass="RoxoViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AXk-hw-GzA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Uue-kR-9Xv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Roxa" id="uCW-pb-J7I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y6F-lh-Wd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4622" y="210"/>
+        </scene>
+        <!--Vermelha-->
+        <scene sceneID="M8P-cT-RXo">
+            <objects>
+                <viewController id="5XP-yE-OTC" customClass="VermelhoViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V7T-N7-8MS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="deW-ZF-Pf5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Vermelha" id="7CL-hy-mnM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xIY-rI-OdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4623" y="922"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ifl-f2-ywf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IVe-cJ-yCX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oF9-hd-982">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1e4-tP-Y5M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xGC-XG-dUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-586" y="125"/>
+        </scene>
+    </scenes>
+</document>
