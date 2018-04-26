@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GravadorAudio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D7g-va-5BJ">
+                                <rect key="frame" x="40" y="59" width="240" height="79"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gga-Ko-Mep">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Gravar"/>
+                                        <connections>
+                                            <action selector="gravar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lMV-3r-9x7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZD-Z6-sDN">
+                                        <rect key="frame" x="0.0" y="49" width="75" height="30"/>
+                                        <state key="normal" title="Reproduzir"/>
+                                        <connections>
+                                            <action selector="reproduzir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ncT-dn-bsN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjm-V5-beS">
+                                        <rect key="frame" x="117" y="49" width="123" height="30"/>
+                                        <state key="normal" title="Parar Reprodução"/>
+                                        <connections>
+                                            <action selector="pararReproducao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OxZ-I7-Dhd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmb-7l-Ck5">
+                                        <rect key="frame" x="117" y="0.0" width="105" height="30"/>
+                                        <state key="normal" title="Parar Gravação"/>
+                                        <connections>
+                                            <action selector="pararGravacao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ra-tb-wjV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kmb-7l-Ck5" secondAttribute="trailing" constant="18" id="ADc-PE-dqM"/>
+                                    <constraint firstAttribute="width" constant="240" id="Mgx-fu-71z"/>
+                                    <constraint firstItem="kjm-V5-beS" firstAttribute="leading" secondItem="VZD-Z6-sDN" secondAttribute="trailing" constant="42" id="P9X-So-mwV"/>
+                                    <constraint firstAttribute="trailing" secondItem="kjm-V5-beS" secondAttribute="trailing" id="Pdr-8j-Y4q"/>
+                                    <constraint firstItem="kmb-7l-Ck5" firstAttribute="top" secondItem="D7g-va-5BJ" secondAttribute="top" id="QYu-om-xnx"/>
+                                    <constraint firstAttribute="bottom" secondItem="VZD-Z6-sDN" secondAttribute="bottom" id="cR1-NB-K6R"/>
+                                    <constraint firstItem="gga-Ko-Mep" firstAttribute="top" secondItem="D7g-va-5BJ" secondAttribute="top" id="d09-bd-8Rh"/>
+                                    <constraint firstItem="gga-Ko-Mep" firstAttribute="leading" secondItem="D7g-va-5BJ" secondAttribute="leading" id="drg-Yv-Cuy"/>
+                                    <constraint firstAttribute="height" constant="79" id="pIB-I5-hKs"/>
+                                    <constraint firstAttribute="bottom" secondItem="kjm-V5-beS" secondAttribute="bottom" id="xO2-hb-nOs"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yu2-b4-SBB">
+                                <rect key="frame" x="101" y="195" width="118" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9wz-wE-JxM"/>
+                                    <constraint firstAttribute="width" constant="118" id="g8n-HL-BAk"/>
+                                </constraints>
+                                <state key="normal" title="Apagar Gravação">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="apagarGravacao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7h2-JI-aA8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D7g-va-5BJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wqn-wS-PjL"/>
+                            <constraint firstItem="yu2-b4-SBB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="biz-0X-vmf"/>
+                            <constraint firstItem="D7g-va-5BJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="dZ5-HG-vrk"/>
+                            <constraint firstItem="yu2-b4-SBB" firstAttribute="top" secondItem="D7g-va-5BJ" secondAttribute="bottom" constant="57" id="qTL-rV-PUk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-101.25" y="118.30985915492958"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrabalhandoSMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destinatário:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zp1-0r-hMY">
+                                <rect key="frame" x="16" y="39" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensagem:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckP-qy-ung">
+                                <rect key="frame" x="16" y="140" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite o telefone ..." textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="FC8-aV-7Mf">
+                                <rect key="frame" x="16" y="68" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddu-CW-sw4">
+                                <rect key="frame" x="262" y="414.5" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ddu-CW-sw4" secondAttribute="height" multiplier="7:5" id="gye-J8-hVn"/>
+                                </constraints>
+                                <state key="normal" title="Enviar"/>
+                                <connections>
+                                    <action selector="enviar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r0L-Zf-avR"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ccg-y9-BOb">
+                                <rect key="frame" x="16" y="169" width="288" height="237.5"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ccg-y9-BOb" secondAttribute="height" multiplier="96:79" id="nWl-Mg-QLM"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zp1-0r-hMY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5bx-kf-Ms4"/>
+                            <constraint firstItem="ccg-y9-BOb" firstAttribute="top" secondItem="ckP-qy-ung" secondAttribute="bottom" constant="8" id="7Bs-CD-oDa"/>
+                            <constraint firstItem="Ddu-CW-sw4" firstAttribute="trailing" secondItem="ccg-y9-BOb" secondAttribute="trailing" id="8bz-sJ-YGh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FC8-aV-7Mf" secondAttribute="trailing" constant="16" id="9aM-mb-BzR"/>
+                            <constraint firstItem="ckP-qy-ung" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AJ0-fC-BwL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ccg-y9-BOb" secondAttribute="trailing" constant="16" id="CtE-k8-a6K"/>
+                            <constraint firstItem="Ddu-CW-sw4" firstAttribute="top" secondItem="ccg-y9-BOb" secondAttribute="bottom" constant="8" id="IRw-t3-XGH"/>
+                            <constraint firstItem="FC8-aV-7Mf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="N7q-EM-Bpt"/>
+                            <constraint firstItem="Zp1-0r-hMY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="PbH-JD-JaE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zp1-0r-hMY" secondAttribute="trailing" constant="207" id="R8s-00-FXj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ckP-qy-ung" secondAttribute="trailing" constant="214" id="emP-Sa-jgx"/>
+                            <constraint firstItem="FC8-aV-7Mf" firstAttribute="top" secondItem="Zp1-0r-hMY" secondAttribute="bottom" constant="8" id="iIs-aL-Jx4"/>
+                            <constraint firstItem="ckP-qy-ung" firstAttribute="top" secondItem="FC8-aV-7Mf" secondAttribute="bottom" constant="42" id="ybl-j1-lgV"/>
+                            <constraint firstItem="ccg-y9-BOb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ymK-TV-XDF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldTelefone" destination="FC8-aV-7Mf" id="OXF-Wf-OVd"/>
+                        <outlet property="textViewMensagem" destination="ccg-y9-BOb" id="GBK-b1-0fk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.375" y="26.408450704225352"/>
+        </scene>
+    </scenes>
+</document>
