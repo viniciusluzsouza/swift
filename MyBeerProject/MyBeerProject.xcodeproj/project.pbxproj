@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CB0197A2098A72800400F6D /* RegisterSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB019792098A72800400F6D /* RegisterSB.storyboard */; };
+		6CB0197C2098A77600400F6D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB0197B2098A77600400F6D /* RegisterViewController.swift */; };
+		6CB0197E2098B3E500400F6D /* SellerRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB0197D2098B3E500400F6D /* SellerRegisterViewController.swift */; };
 		6CCAF212201CE86700E9F116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCAF211201CE86700E9F116 /* AppDelegate.swift */; };
 		6CCAF214201CE86700E9F116 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCAF213201CE86700E9F116 /* ViewController.swift */; };
 		6CCAF217201CE86700E9F116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCAF215201CE86700E9F116 /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6CB019792098A72800400F6D /* RegisterSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterSB.storyboard; sourceTree = "<group>"; };
+		6CB0197B2098A77600400F6D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		6CB0197D2098B3E500400F6D /* SellerRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerRegisterViewController.swift; sourceTree = "<group>"; };
 		6CCAF20E201CE86700E9F116 /* MyBeerProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBeerProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCAF211201CE86700E9F116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CCAF213201CE86700E9F116 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				6CCAF211201CE86700E9F116 /* AppDelegate.swift */,
 				6CCAF213201CE86700E9F116 /* ViewController.swift */,
 				6CCAF215201CE86700E9F116 /* Main.storyboard */,
+				6CB019792098A72800400F6D /* RegisterSB.storyboard */,
+				6CB0197B2098A77600400F6D /* RegisterViewController.swift */,
+				6CB0197D2098B3E500400F6D /* SellerRegisterViewController.swift */,
 				6CCAF218201CE86700E9F116 /* Assets.xcassets */,
 				6CCAF21A201CE86700E9F116 /* LaunchScreen.storyboard */,
 				6CCAF21D201CE86700E9F116 /* Info.plist */,
@@ -133,6 +142,7 @@
 				6CCAF219201CE86700E9F116 /* Assets.xcassets in Resources */,
 				6CCAF224201CEB0100E9F116 /* firstbg.jpg in Resources */,
 				6CCAF226201CF74C00E9F116 /* beerlogo.png in Resources */,
+				6CB0197A2098A72800400F6D /* RegisterSB.storyboard in Resources */,
 				6CCAF217201CE86700E9F116 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CB0197E2098B3E500400F6D /* SellerRegisterViewController.swift in Sources */,
+				6CB0197C2098A77600400F6D /* RegisterViewController.swift in Sources */,
 				6CCAF214201CE86700E9F116 /* ViewController.swift in Sources */,
 				6CCAF212201CE86700E9F116 /* AppDelegate.swift in Sources */,
 			);
